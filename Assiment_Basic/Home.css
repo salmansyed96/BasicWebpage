@@ -1,0 +1,66 @@
+/* CSS for the search box and filters */
+.search-filter-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-box {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .dropdown-box {
+    width: 150px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .filter-button {
+    background-color: #4c98af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* Style for the placeholder text */
+  .search-box::placeholder,
+  .dropdown-box::placeholder {
+    color: #999;
+  }
+
+  /* Style on focus */
+  .search-box:focus,
+  .dropdown-box:focus {
+    border-color: #4ca5af;
+  }
+
+  .heading-light{
+    color: #868585;
+    font-size: large;
+  }
+  .button-border{
+    border-bottom: 1px;
+  }
+  .text-lightt{
+    color: #767575;
+  }
+  .text-green{
+    color: rgb(1, 66, 1);
+  }
+  .dispay-flex{
+    display: flex;
+  }
+  .top-marign{
+    margin-top: 50px;
+  }
