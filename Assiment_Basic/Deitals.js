@@ -47,6 +47,9 @@ data.users.forEach(user => {
   tableBody.appendChild(newRow);
 });
 
+showData(data.users[0].id);
+
+
 
   })
   .catch(error => {
@@ -66,13 +69,23 @@ fetch('https://dummyjson.com/users/'+usertId)
   })
   .then(data => {
     console.log(data);
+    const profilePic = document.querySelector('#profilePic');
+    const picture = document.createElement('img');
+    picture.setAttribute("src",  data.image);
+    picture.setAttribute("style",  "height:80px;border-radius:50%;");
+    profilePic.appendChild(picture);
+
+
+
+    const userName = document.querySelector('#userName')
+    const nameCell = document.createElement('nameCell')
+    userName.appendChild(nameCell)
+
+
   })
   .catch(error => {
     // Handle any errors that occurred during the fetch
     console.error('There was a problem with the fetch operation:', error);
   });
 }
-
-
-
 
